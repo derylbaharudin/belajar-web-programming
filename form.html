@@ -33,15 +33,37 @@
         <button type="submit">Kirim Data</button>
         <button type="submit" value="daftar">Daftar</button>
     </form>
-
+    <br>
+<hr>
+    <br>
     <h1>Pesanan</h1>
     <form action="/order">
         <div>
             <label for="Baju">Baju</label>
             <input type="radio" name="baju" id="" value="Kemeja" checked><label for="">Kemeja</label>
             <input type="radio" name="baju" id="" value="Kaos"><label for="">Kaos</label>
-            <button type="submit">Order</button>
         </div>
+        <div>
+            <label for="ukuran">Ukuran</label>
+            <select name="ukuran" id="ukuran">
+                <option value="" selected></option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+                <option value="xl">Extra-Large</option>
+            </select>
+        </div>
+        <div>
+            <p>
+                <label for="notes">Catatan</label>
+            </p>
+            <textarea name="notes" id="notes" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="term">Sesuai Pesanan</label>
+            <input type="checkbox" name="term" id="term" value="yes">
+        </div>
+        <button type="submit">Order</button>
     </form>
 </body>
 </html>
