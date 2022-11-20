@@ -8,3 +8,8 @@ button{
     color: darkmagenta;
     background-color: bisque;
 }
+
+p{
+    font-weight:inherit;
+    text-align: justify;
+}
